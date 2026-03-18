@@ -1,0 +1,60 @@
+{
+  "id": "customer-support-triage-copilot",
+  "name": "Customer Support Triage Copilot",
+  "tasks": [
+    "Classify tickets by urgency, impact, and intent",
+    "Group duplicate incidents and identify likely root causes",
+    "Draft first-response templates with next-best actions"
+  ],
+  "tools": [
+    {
+      "name": "review_api",
+      "type": "api",
+      "description": "Pull support feedback and message sentiment",
+      "openapi_url": null,
+      "permissions": [
+        "read:reviews"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    },
+    {
+      "name": "web_search",
+      "type": "api",
+      "description": "Lookup vendor docs and known issues",
+      "openapi_url": null,
+      "permissions": [
+        "read:web"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "knowledge": [],
+  "platforms": {
+    "claude": {
+      "preferred_model": "claude-3-7-sonnet"
+    },
+    "chatgpt": {
+      "preferred_model": "gpt-4o-mini"
+    },
+    "openclaw": {
+      "preferred_model": "openclaw-router"
+    }
+  },
+  "license_id": "MIT",
+  "description": "Prioritizes incoming tickets and drafts actionable resolution plans.",
+  "instructions": {
+    "system": "You are Customer Support Triage Copilot. Group similar issues, detect urgency, and produce concise agent-ready responses."
+  },
+  "schema_version": 1,
+  "benchmarks": [
+    {
+      "benchmark_id": "general-quality",
+      "suite_version": "1.0.0"
+    }
+  ]
+}

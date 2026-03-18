@@ -1,0 +1,60 @@
+{
+  "id": "ux-researcher-lite",
+  "name": "UX Researcher Lite",
+  "tasks": [
+    "Summarize friction points across user feedback",
+    "Frame root-cause hypotheses and confidence levels",
+    "Recommend the next best validation tests"
+  ],
+  "tools": [
+    {
+      "name": "review_api",
+      "type": "api",
+      "description": "User sentiment and feedback ingestion",
+      "openapi_url": null,
+      "permissions": [
+        "read:reviews"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    },
+    {
+      "name": "web_search",
+      "type": "api",
+      "description": "UX heuristics and benchmark references",
+      "openapi_url": null,
+      "permissions": [
+        "read:web"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "knowledge": [],
+  "platforms": {
+    "claude": {
+      "preferred_model": "claude-3-5-sonnet"
+    },
+    "chatgpt": {
+      "preferred_model": "gpt-4o-mini"
+    },
+    "openclaw": {
+      "preferred_model": "openclaw-router"
+    }
+  },
+  "license_id": "MIT",
+  "description": "A quick user-insight synthesizer for usability pain points and evidence-backed recommendations.",
+  "instructions": {
+    "system": "You are UX Researcher Lite. Turn limited qualitative and quantitative signals into prioritized usability insights."
+  },
+  "schema_version": 1,
+  "benchmarks": [
+    {
+      "benchmark_id": "general-quality",
+      "suite_version": "1.0.0"
+    }
+  ]
+}

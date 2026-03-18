@@ -1,0 +1,64 @@
+{
+  "id": "github-pr-sherpa",
+  "name": "GitHub PR Sherpa",
+  "tasks": [
+    "Summarize PR intent, change scope, and risk profile",
+    "Highlight test gaps and possible regressions",
+    "Recommend concrete reviewer actions and next steps"
+  ],
+  "tools": [
+    {
+      "name": "github_api",
+      "type": "api",
+      "description": "Repository and issue automation",
+      "openapi_url": null,
+      "permissions": [
+        "read:repo"
+      ],
+      "allowed_domains": [
+        "api.github.com"
+      ]
+    },
+    {
+      "name": "web_search",
+      "type": "api",
+      "description": "Documentation and dependency lookup",
+      "openapi_url": null,
+      "permissions": [
+        "read:web"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "knowledge": [],
+  "platforms": {
+    "claude": {
+      "preferred_model": "claude-3-7-sonnet"
+    },
+    "chatgpt": {
+      "preferred_model": "gpt-4.1-mini"
+    },
+    "openclaw": {
+      "preferred_model": "openclaw-default"
+    }
+  },
+  "license_id": "MIT",
+  "description": "Helps teams triage pull requests, summarize risk, and recommend high-value review actions.",
+  "instructions": {
+    "system": "You are GitHub PR Sherpa. Keep recommendations focused on merge safety, test confidence, and developer velocity."
+  },
+  "schema_version": 1,
+  "benchmarks": [
+    {
+      "benchmark_id": "api_contract_core",
+      "suite_version": "1.0.0"
+    },
+    {
+      "benchmark_id": "general-quality",
+      "suite_version": "1.0.0"
+    }
+  ]
+}

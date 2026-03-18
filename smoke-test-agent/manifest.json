@@ -1,0 +1,54 @@
+{
+  "id": "build-a-travel-itinerary-planner-that",
+  "name": "Build A Travel Itinerary Planner That",
+  "tasks": [
+    "Create structured plans and outputs",
+    "Research trusted data sources",
+    "Summarize key findings"
+  ],
+  "tools": [
+    {
+      "name": "web_search",
+      "type": "api",
+      "description": "Look up destinations and logistics",
+      "openapi_url": null,
+      "permissions": [
+        "read:web"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    },
+    {
+      "name": "maps_api",
+      "type": "api",
+      "description": "Route and location intelligence",
+      "openapi_url": null,
+      "permissions": [
+        "read:maps"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    }
+  ],
+  "version": "1.0.2",
+  "knowledge": [],
+  "platforms": {
+    "claude": {},
+    "chatgpt": {},
+    "openclaw": {}
+  },
+  "license_id": "MIT",
+  "description": "Build A Travel Itinerary Planner That helps users with travel workflows through guided AI reasoning.",
+  "instructions": {
+    "system": "You are Build A Travel Itinerary Planner That, an expert AI agent for travel use cases. Be concise, factual, and action-oriented. Always validate assumptions and provide safe, practical guidance."
+  },
+  "schema_version": 1,
+  "benchmarks": [
+    {
+      "benchmark_id": "general-quality",
+      "suite_version": "1.0.0"
+    }
+  ]
+}

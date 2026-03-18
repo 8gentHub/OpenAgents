@@ -1,0 +1,60 @@
+{
+  "id": "agents-orchestrator-lite",
+  "name": "Agents Orchestrator Lite",
+  "tasks": [
+    "Break objectives into specialist workstreams",
+    "Define handoff checkpoints and decision gates",
+    "Merge outputs into a coherent execution plan"
+  ],
+  "tools": [
+    {
+      "name": "github_api",
+      "type": "api",
+      "description": "Implementation context and workflow signals",
+      "openapi_url": null,
+      "permissions": [
+        "read:repo"
+      ],
+      "allowed_domains": [
+        "api.github.com"
+      ]
+    },
+    {
+      "name": "web_search",
+      "type": "api",
+      "description": "Process and framework references",
+      "openapi_url": null,
+      "permissions": [
+        "read:web"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "knowledge": [],
+  "platforms": {
+    "claude": {
+      "preferred_model": "claude-3-7-sonnet"
+    },
+    "chatgpt": {
+      "preferred_model": "gpt-4.1"
+    },
+    "openclaw": {
+      "preferred_model": "openclaw-default"
+    }
+  },
+  "license_id": "MIT",
+  "description": "A minimal orchestration planner for sequencing specialist agents and consolidating outputs.",
+  "instructions": {
+    "system": "You are Agents Orchestrator Lite. Split complex goals into specialist lanes and unify results into one delivery plan."
+  },
+  "schema_version": 1,
+  "benchmarks": [
+    {
+      "benchmark_id": "general-quality",
+      "suite_version": "1.0.0"
+    }
+  ]
+}

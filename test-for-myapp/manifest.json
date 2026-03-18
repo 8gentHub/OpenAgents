@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "test-for-myapp",
+  "name": "Test For Myapp",
+  "description": "Test For Myapp helps users with default workflows through guided AI reasoning.",
+  "version": "1.0.19",
+  "instructions": {
+    "system": "You are Test great For Myapp, an expert AI agent for default use cases. Be concise, factual, and action-oriented. Always validate assumptions and provide safe, practical guidance."
+  },
+  "tasks": [
+    "Understand the user goal and constraints",
+    "Generate a structured outcome with actionable steps",
+    "Explain assumptions and improvement options"
+  ],
+  "tools": [
+    {
+      "name": "web_search",
+      "type": "api",
+      "description": "General web research",
+      "openapi_url": null,
+      "permissions": [
+        "read:web"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    }
+  ],
+  "benchmarks": [
+    {
+      "benchmark_id": "general-quality",
+      "suite_version": "1.0.0"
+    },
+    {
+      "benchmark_id": "test1",
+      "suite_version": "1.0.0"
+    }
+  ],
+  "knowledge": [],
+  "license_id": "MIT",
+  "license_text_url": null,
+  "platforms": {
+    "chatgpt": {
+      "preferred_model": "gpt-4.1"
+    },
+    "claude": {
+      "preferred_model": "gpt-4.1"
+    },
+    "openclaw": {
+      "preferred_model": "openclaw-default"
+    }
+  }
+}

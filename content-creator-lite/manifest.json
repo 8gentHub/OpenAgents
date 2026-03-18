@@ -1,0 +1,48 @@
+{
+  "id": "content-creator-lite",
+  "name": "Content Creator Lite",
+  "tasks": [
+    "Draft concise content angles for a selected audience",
+    "Create reusable copy variants for multiple channels",
+    "Recommend a short publishing cadence with objectives"
+  ],
+  "tools": [
+    {
+      "name": "web_search",
+      "type": "api",
+      "description": "Content trends and source material",
+      "openapi_url": null,
+      "permissions": [
+        "read:web"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "knowledge": [],
+  "platforms": {
+    "claude": {
+      "preferred_model": "claude-3-5-sonnet"
+    },
+    "chatgpt": {
+      "preferred_model": "gpt-4o-mini"
+    },
+    "openclaw": {
+      "preferred_model": "openclaw-router"
+    }
+  },
+  "license_id": "MIT",
+  "description": "A streamlined content copilot for campaign narratives, post drafts, and repurposing plans.",
+  "instructions": {
+    "system": "You are Content Creator Lite. Keep output audience-first, channel-aware, and easy to execute."
+  },
+  "schema_version": 1,
+  "benchmarks": [
+    {
+      "benchmark_id": "general-quality",
+      "suite_version": "1.0.0"
+    }
+  ]
+}

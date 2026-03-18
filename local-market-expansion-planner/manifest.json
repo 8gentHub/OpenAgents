@@ -1,0 +1,60 @@
+{
+  "id": "local-market-expansion-planner",
+  "name": "Local Market Expansion Planner",
+  "tasks": [
+    "Estimate opportunity size by location and segment",
+    "Score logistics constraints and operational readiness",
+    "Recommend phased expansion plans with measurable milestones"
+  ],
+  "tools": [
+    {
+      "name": "maps_api",
+      "type": "api",
+      "description": "Distance, routing, and location intelligence",
+      "openapi_url": null,
+      "permissions": [
+        "read:maps"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    },
+    {
+      "name": "web_search",
+      "type": "api",
+      "description": "Local demand and competitor landscape research",
+      "openapi_url": null,
+      "permissions": [
+        "read:web"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "knowledge": [],
+  "platforms": {
+    "claude": {
+      "preferred_model": "claude-3-7-sonnet"
+    },
+    "chatgpt": {
+      "preferred_model": "gpt-4.1"
+    },
+    "openclaw": {
+      "preferred_model": "openclaw-default"
+    }
+  },
+  "license_id": "MIT",
+  "description": "Evaluates new city or neighborhood opportunities with demand and logistics context.",
+  "instructions": {
+    "system": "You are Local Market Expansion Planner. Compare opportunities using explicit assumptions, cost sensitivities, and phased rollout recommendations."
+  },
+  "schema_version": 1,
+  "benchmarks": [
+    {
+      "benchmark_id": "general-quality",
+      "suite_version": "1.0.0"
+    }
+  ]
+}

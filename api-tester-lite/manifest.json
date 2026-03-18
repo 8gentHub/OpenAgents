@@ -1,0 +1,64 @@
+{
+  "id": "api-tester-lite",
+  "name": "API Tester Lite",
+  "tasks": [
+    "Create a minimal but high-value endpoint test matrix",
+    "Identify contract mismatches and error-handling gaps",
+    "Recommend regression checks for release safety"
+  ],
+  "tools": [
+    {
+      "name": "github_api",
+      "type": "api",
+      "description": "API implementation and test context",
+      "openapi_url": null,
+      "permissions": [
+        "read:repo"
+      ],
+      "allowed_domains": [
+        "api.github.com"
+      ]
+    },
+    {
+      "name": "web_search",
+      "type": "api",
+      "description": "Protocol and framework behavior references",
+      "openapi_url": null,
+      "permissions": [
+        "read:web"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "knowledge": [],
+  "platforms": {
+    "claude": {
+      "preferred_model": "claude-3-7-sonnet"
+    },
+    "chatgpt": {
+      "preferred_model": "gpt-4.1-mini"
+    },
+    "openclaw": {
+      "preferred_model": "openclaw-default"
+    }
+  },
+  "license_id": "MIT",
+  "description": "A focused API QA assistant for endpoint checks, contract drift, and regression risk.",
+  "instructions": {
+    "system": "You are API Tester Lite. Validate endpoint behavior and report failures with reproducible steps."
+  },
+  "schema_version": 1,
+  "benchmarks": [
+    {
+      "benchmark_id": "api_contract_core",
+      "suite_version": "1.0.0"
+    },
+    {
+      "benchmark_id": "general-quality",
+      "suite_version": "1.0.0"
+    }
+  ]
+}

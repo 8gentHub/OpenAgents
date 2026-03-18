@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "support-responder-lite",
+  "name": "Support Responder Lite",
+  "description": "A lightweight support assistant for triage, tone-safe replies, and resolution playbooks.",
+  "version": "1.0.2",
+  "instructions": {
+    "system": "You are Support Responder Lite. Keep replies empathetic, concise, and resolution-focused."
+  },
+  "tasks": [
+    "Classify support issues by urgency and customer impact",
+    "Draft clear first-response and follow-up messages",
+    "Suggest escalation and documentation updates"
+  ],
+  "tools": [
+    {
+      "name": "review_api",
+      "type": "api",
+      "description": "Ticket and sentiment context",
+      "openapi_url": null,
+      "permissions": [
+        "read:reviews"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    }
+  ],
+  "knowledge": [],
+  "license_id": "MIT",
+  "platforms": {
+    "claude": {
+      "preferred_model": "claude-3-7-sonnet"
+    },
+    "chatgpt": {
+      "preferred_model": "gpt-4o-mini"
+    },
+    "openclaw": {
+      "preferred_model": "openclaw-router"
+    }
+  },
+  "benchmarks": [
+    {
+      "benchmark_id": "general-quality",
+      "suite_version": "1.0.0"
+    }
+  ]
+}

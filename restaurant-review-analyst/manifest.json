@@ -1,0 +1,64 @@
+{
+  "id": "restaurant-review-analyst",
+  "name": "Restaurant Review Analyst",
+  "tasks": [
+    "Aggregate positive and negative themes from customer feedback",
+    "Identify recurring issues and likely root causes",
+    "Recommend prioritized improvements with expected impact"
+  ],
+  "tools": [
+    {
+      "name": "review_api",
+      "type": "api",
+      "description": "Collect and parse customer feedback",
+      "openapi_url": null,
+      "permissions": [
+        "read:reviews"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    },
+    {
+      "name": "web_search",
+      "type": "api",
+      "description": "Competitor and trend research",
+      "openapi_url": null,
+      "permissions": [
+        "read:web"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "knowledge": [],
+  "platforms": {
+    "claude": {
+      "preferred_model": "claude-3-7-sonnet"
+    },
+    "chatgpt": {
+      "preferred_model": "gpt-4.1"
+    },
+    "openclaw": {
+      "preferred_model": "openclaw-default"
+    }
+  },
+  "license_id": "MIT",
+  "description": "Analyzes customer feedback and surfaces menu, service, and operations opportunities.",
+  "instructions": {
+    "system": "You are Restaurant Review Analyst. Summarize sentiment trends, recurring complaints, and quick-win improvements with clear reasoning."
+  },
+  "schema_version": 1,
+  "benchmarks": [
+    {
+      "benchmark_id": "restaurant-review-core",
+      "suite_version": "1.0.0"
+    },
+    {
+      "benchmark_id": "general-quality",
+      "suite_version": "1.0.0"
+    }
+  ]
+}

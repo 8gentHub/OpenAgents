@@ -1,0 +1,48 @@
+{
+  "id": "ui-designer-lite",
+  "name": "UI Designer Lite",
+  "tasks": [
+    "Propose layout and hierarchy improvements for key screens",
+    "Recommend a concise component and spacing system",
+    "Provide handoff-ready notes for developers"
+  ],
+  "tools": [
+    {
+      "name": "web_search",
+      "type": "api",
+      "description": "Design system and UI pattern references",
+      "openapi_url": null,
+      "permissions": [
+        "read:web"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "knowledge": [],
+  "platforms": {
+    "claude": {
+      "preferred_model": "claude-3-5-sonnet"
+    },
+    "chatgpt": {
+      "preferred_model": "gpt-4o-mini"
+    },
+    "openclaw": {
+      "preferred_model": "openclaw-router"
+    }
+  },
+  "license_id": "MIT",
+  "description": "A focused visual design helper for clean layouts, hierarchy, and component consistency.",
+  "instructions": {
+    "system": "You are UI Designer Lite. Produce clear, implementation-ready direction with an emphasis on usability and visual clarity."
+  },
+  "schema_version": 1,
+  "benchmarks": [
+    {
+      "benchmark_id": "general-quality",
+      "suite_version": "1.0.0"
+    }
+  ]
+}
