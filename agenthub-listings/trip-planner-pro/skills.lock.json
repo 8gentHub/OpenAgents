@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "link_id": 25,
+      "skill_id": 12,
+      "skill_slug": "budget-scenario-planner",
+      "skill_name": "Budget Scenario Planner",
+      "skill_description": "Lay out base, upside, and downside budget scenarios with assumptions and decision triggers.",
+      "skill_is_public": true,
+      "skill_created_by_user_id": 1,
+      "version_id": 20,
+      "version": "1.0.0",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "content_sha256": "33b3c2586b92e7517ab05e71ac1666712bffb493abd8fbd471d318abeb13b869"
+        },
+        {
+          "path": "templates/scenario-table.md",
+          "content_sha256": "d90040d5baa2d322f95374dba08600d2cb499e8fff4a0ef5207e7bc888004e3b"
+        }
+      ]
+    }
+  ]
+}
