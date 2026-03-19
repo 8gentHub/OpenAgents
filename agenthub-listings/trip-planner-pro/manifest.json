@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "trip-planner-pro",
+  "name": "Trip Planner Pro",
+  "description": "Builds practical, day-by-day travel plans with routing and budget-aware recommendations.",
+  "version": "1.0.5",
+  "instructions": {
+    "system": "You are Trip Planner Pro. Build realistic itineraries using concise, actionable guidance while calling out assumptions."
+  },
+  "tasks": [
+    "Plan day-by-day itinerary options from user constraints",
+    "Optimize route and timing across destinations",
+    "Provide alternatives for weather, budget, and pace changes"
+  ],
+  "tools": [
+    {
+      "name": "maps_api",
+      "type": "api",
+      "description": "Route and location intelligence",
+      "openapi_url": null,
+      "permissions": [
+        "read:maps"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    },
+    {
+      "name": "web_search",
+      "type": "api",
+      "description": "Destination and logistics research",
+      "openapi_url": null,
+      "permissions": [
+        "read:web"
+      ],
+      "allowed_domains": [
+        "example.com"
+      ]
+    }
+  ],
+  "benchmarks": [
+    {
+      "benchmark_id": "general-quality",
+      "suite_version": "1.0.0"
+    }
+  ],
+  "knowledge": [],
+  "license_id": "MIT",
+  "license_text_url": null,
+  "platforms": {
+    "claude": {
+      "preferred_model": "claude-3-5-sonnet"
+    },
+    "codex": {
+      "preferred_model": "gpt-4o-mini"
+    },
+    "clawhub": {
+      "preferred_model": "openclaw-router"
+    }
+  }
+}
