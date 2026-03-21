@@ -1,0 +1,5 @@
+- [ ] Every day has a clear start point and end point
+- [ ] Fixed reservations are sequenced before optional stops
+- [ ] Transfer, parking, or walking buffer is explicit
+- [ ] Late-day travel is checked against check-in/closing hours
+- [ ] At least one fallback route or stop is documented for disruptions
