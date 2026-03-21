@@ -46,31 +46,6 @@
           "content_sha256": "999180eb61b552654dbfe35badcb036be17572173708d9b8b6942400284dd776"
         }
       ]
-    },
-    {
-      "link_id": 40,
-      "skill_id": 15,
-      "skill_slug": "travel-pdf-schedule-packager",
-      "skill_name": "Travel PDF Schedule Packager",
-      "skill_description": "Package itineraries into PDF-ready day sheets with dates, times, confirmations, and traveler notes.",
-      "skill_is_public": true,
-      "skill_created_by_user_id": 1,
-      "version_id": 24,
-      "version": "1.0.1",
-      "files": [
-        {
-          "path": "SKILL.md",
-          "content_sha256": "78b689acd233e08fecb8af49a8ec651b8d303e7713f67e8f228896819611198c"
-        },
-        {
-          "path": "templates/pdf-itinerary-layout.md",
-          "content_sha256": "47b055c52ec5b513aa173e69b50c51cfe2e4f598024e01943b3be3ca59764942"
-        },
-        {
-          "path": "examples/pdf-export-notes.md",
-          "content_sha256": "a1ebfdd77e55c9d92a0cb56289dc9bdc66fa4a8b75fca3da5b41aac6e912702a"
-        }
-      ]
     }
   ]
 }
